@@ -265,10 +265,48 @@ backdrop-filter: blur(10px);/*excelente propiedad*/
   margin-top: 70px;
 } */
 
-.home__handle{
+/*.home__handle{
   justify-self: center;
   width: 180px;
   position: relative;
   height: 293px;
+}*/
+
+.home__buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem ;
 }
 
+.home__social{
+  bottom: 5rem;
+  left: 0;
+  display: grid;
+  row-gap: .5rem;
+}
+
+.home__social-link{
+  width: max-content;
+  background-color: var(--container-color);
+  color: var(--first-color);
+  padding: .25rem;
+  border-radius: .25rem;
+  display: flex;
+  font-size: 1rem;
+  transition: .4s;
+}
+
+
+.home__social-link:hover{
+  background-color: var(--first-color);
+  color: #fff;
+}
+
+.home__social::after{
+  content: '';
+  width: 32px;
+  height: 2px;
+  background-color: var(--first-color);
+  transform: rotate(90deg) translate(16px, 3px);
+}
