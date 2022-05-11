@@ -6,6 +6,7 @@
         <link rel="shortcut icon" href="assets/img/teclado.png" type="image/x-icon">
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
         <title> Portafolio Profesional </title>
     </head>
     <body>
@@ -13,7 +14,7 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="" class="nav__logo">logo </a>
-
+                <!--  
                 <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -46,13 +47,11 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-                <!--tema button moon -->
-                <i class='bx bxs-moon change-theme' id="change-theme"></i>
+                </div> -->
             </nav>
         </header>
 
-        <!-- MAIN-->
+        <!--MAIN-->
         <main class="main">
             <!-- HOME -->
             <section class="home section" id="home">
@@ -86,45 +85,277 @@
             </section>
 
 
-                    <!-- ===== About ===== -->
+                    <!-- About -->
 
-        <section class="about section" id="about" >
-            <span class="section__subtitle">Intro</span>
-            <h2 class="section__title">Sobre mi</h2>
+                <section class="about section" id="about" >
+                    <span class="section__subtitle">Intro</span>
+                    <h2 class="section__title">Sobre mi</h2>
 
-            <div class="about__container container grid">
-            <!-- <img src="assets/img/andresfelipe.png" alt="" class="about__img">--> 
-                <div class="about__data">
+                    <div class="about__container container grid">
+                    <!-- <img src="assets/img/andresfelipe.png" alt="" class="about__img">--> 
+                        <div class="about__data">
 
-                    <div class="about__info">
+                            <div class="about__info">
 
-                        <div class="about__box">
-                            <i class='bx bx-award about__icon'></i>
-                            <h3 class="about__title">Experiencia</h3>
-                            <span class="about__subtitle">Lorem ipsum dolor sit amet consectetur,</span>
-                        </div>
+                                <div class="about__box">
+                                    <i class='bx bx-award about__icon'></i>
+                                    <h3 class="about__title">Experiencia</h3>
+                                    <span class="about__subtitle">Lorem ipsum dolor sit amet consectetur,</span>
+                                </div>
 
-                        <div class="about__box">
-                            <i class='bx bx-briefcase about__icon'></i>
-                            <h3 class="about__title">Completados</h3>
-                            <span class="about__subtitle">Lorem ipsum dolor sit</span>
-                        </div>
-                        
-                        <div class="about__box">
-                            <i class='bx bx-support about__icon'></i>
-                            <h3 class="about__title">Soporte</h3>
-                            <span class="about__subtitle">Lorem ipsum dolor sit amet consectet</span>
+                                <div class="about__box">
+                                    <i class='bx bx-briefcase about__icon'></i>
+                                    <h3 class="about__title">Completados</h3>
+                                    <span class="about__subtitle">Lorem ipsum dolor sit</span>
+                                </div>
+                                
+                                <div class="about__box">
+                                    <i class='bx bx-support about__icon'></i>
+                                    <h3 class="about__title">Soporte</h3>
+                                    <span class="about__subtitle">Lorem ipsum dolor sit amet consectet</span>
+                                </div>
+                            </div>
+
+                            <p class="about__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium molestias voluptas non illum, id eius accusamus inventore doloremque cumque pariatur facere. Fugit, illum laudantium soluta eveniet officiis ad est esse.
+                            </p>
+
+                            <a href="#contact" class="button">Contactame</a>
                         </div>
                     </div>
+                </section>
 
-                    <p class="about__description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium molestias voluptas non illum, id eius accusamus inventore doloremque cumque pariatur facere. Fugit, illum laudantium soluta eveniet officiis ad est esse.
-                    </p>
+                        <!-- Work -->
 
-                    <a href="#contact" class="button">Contactame</a>
+                <section class="work section" id="work">
+                    <span class="section__subtitle">Mi Portafolio</span>
+                    <h2 class="section__title">Proyectos</h2>
+                    <div class="work__filters">
+                        <span class="work__item active-work" data-filter='all'>Todos</span>
+                        <span class="work__item" data-filter=".web" >Web</span>
+                        <span class="work__item" data-filter=".movil" >Apps</span>
+                        <span class="work__item" data-filter=".design" >Games</span>
+                    </div>
+                    <div class="work__container container grid">
+                        
+                        <div class="work__card mix web">
+                            
+                        <img src="" alt="" class="work__img">
+                            <h3 class="work__title"></h3>
+                            <a href="" class="work__button" target="_blank">
+                                Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                            </a>
+                        </div>
+                        <div class="work__card mix web">
+                            
+                        <img src="" alt="" class="work__img">
+                            <h3 class="work__title"></h3>
+                            <a href="" class="work__button" target="_blank">
+                                Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                            </a>
+                        </div>
+                        <div class="work__card mix design">
+                            
+                        <img src="g" alt="" class="work__img">
+                            <h3 class="work__title"></h3>       
+                            <a href="" class="work__button" target="_blank">
+                                Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                            </a>
+                        </div>       
+                        <div class="work__card mix design">
+                            
+                        <img src="" alt="" class="work__img">        
+                            <h3 class="work__title"></h3>
+                            <a href="" class="work__button" target="_blank">
+                                Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                            </a>
+                        </div>
+                        <div class="work__card mix web">
+                            
+                            <img src="/img/nike_app.jpg" alt="" class="work__img">  
+                            <h3 class="work__title"></h3> 
+                            <a href="https://zakyup-nike-ecommerce.netlify.app/" class="work__button" target="_blank">
+                                Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                            </a>
+                        </div>
+                        <div class="work__card mix web">
+                            
+                            <img src="/img/cafeweb.jpg" alt="" class="work__img">
+                                <h3 class="work__title"></h3> 
+                                <a href="" class="work__button" target="_blank">
+                                    Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                            </a>
+                        </div>
+                        <div class="work__card mix web">
+                            
+                            <img src="img/Cyberpunk2077.png" alt="" class="work__img">          
+                                <h3 class="work__title"></h3>
+                                <a href="" class="work__button" target="_blank">
+                                    Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                                </a>
+                        </div>
+                        <div class="work__card mix web">
+                            
+                            <img src="" alt="" class="work__img">           
+                                <h3 class="work__title"></h3>            
+                                <a href=""" class="work__button" target="_blank">
+                                    Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                                </a>
+                        </div>
+                        <div class="work__card mix web">
+                            
+                            <img src="img/Vida verde img.jpg" alt="" class="work__img">
+                                <h3 class="work__title"></h3>
+                                <a href=""" class="work__button" target="_blank">
+                                    Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                                </a>
+                        </div>
+                        <div class="work__card mix movil">
+                            
+                            <img src="img//Rick_and_Morty_API.gif" alt="" class="work__img">
+                                <h3 class="work__title"></h3>
+                                <a href="" class="work__button" target="_blank">
+                                    Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                                </a>
+                        </div>
+                </section>
+
+
+        <!-- skills -->
+
+        <section class="skills section" id="skills" >
+            <span class="section__subtitle">Mis Habilidades</span>
+            <h2 class="section__title">Experiencia</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend developer</h3>
+
+                    <div class="skills__box">
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">HTML/HTML5</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+
+                        
+                        </div>
+
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Node JS</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__content">
+                    <h3 class="skills__title">Mas tecnologías</h3>
+
+                    <div class="skills__box">
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">NPM</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">GIT</h3>
+                                    <span class="skills__level">INTERMEDIO</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Basico</span>
+                                </div>
+                            </div>
+
+                        
+                        </div>
+
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">GitHub</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">TypeCript</h3>
+                                    <span class="skills__level">BASICO</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-    </section>
+        </section>
         </main>
 
 
