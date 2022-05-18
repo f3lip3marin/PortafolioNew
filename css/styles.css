@@ -831,9 +831,6 @@ backdrop-filter: blur(10px);/*excelente propiedad*/
     width: 130px;
   }
 
-  .about__info{
-    grid-template-columns: repeat(2, 1fr);
-  }
 
   .skills__box{
     column-gap: 1rem;
@@ -872,9 +869,7 @@ backdrop-filter: blur(10px);/*excelente propiedad*/
     right: 0;
     margin: 0 auto;
   }
-  .about__description{
-    padding:  0 5rem;
-  }
+
 
   .skills__container{
     justify-content: center;
@@ -975,33 +970,12 @@ backdrop-filter: blur(10px);/*excelente propiedad*/
     font-size: 2rem;
   }
 
-  .about__container{
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    column-gap: 4rem;
-  }
 
-  .about__img{
-    width: 350px;
-  }
 
-  .about__data{
-    text-align: initial;
-  }
+  
 
-  .about__info{
-    justify-content: initial;
-  }
 
-  .about__box{
-    text-align: center;
-    padding: 1rem 1.25rem;
-  }
 
-  .about__description{
-    padding: 0 4rem 0 0;
-    margin-bottom: 2.5rem;
-  }
 
   .skills__container{
     grid-template-columns: repeat(2, 350px);
